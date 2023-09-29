@@ -4,11 +4,10 @@
     left:25%;
     top:1%;
     max-width: 800px;
-    width: 98%;
-    height:98%;
+    width: 98%;    
     max-height: 720px;
+    height:98%;
     border: solid 2px darkcyan;
-    background-color: rgba(0, 139, 139, 0.056);
 }
 
 .informationZone{
@@ -22,9 +21,10 @@
 
 .gameZone{
     width: 800px;
-    height:86%;
+    height:600px;
     position: absolute;
-    bottom:0;
+    left:0;
+    top: 16%;
     z-index: 0;
     overflow: hidden;
     border: solid 2px red;
@@ -43,4 +43,23 @@
     pointer-events: none;
     z-index: 2;
 
+}
+
+.bullet{
+    position: absolute;
+    transform-origin: center center;
+    width:  8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid 1px gainsboro;
+    box-shadow: inset 0 0 5px #FFFF,
+                inset 2px 0 8px #FF00FF,
+                inset -2px 0 8px #00FFFF,
+                inset 2px 0 30px #FF00FF,
+                inset -2px 0 30px #00FFFF,
+                0 0 5px #FFFFFF,
+                -1px 0 8px #FF00FF,
+                1px 0 8px #00FFFF;
+    pointer-events: none;
+    z-index: 1;
 }
